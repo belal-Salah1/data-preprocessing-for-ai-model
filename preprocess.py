@@ -3,7 +3,7 @@ import os
 import numpy as np
 import random
 
-IMG_SIZE = 320
+IMG_SIZE = 224
 
 SPLIT = {
     "train": 0.7,
@@ -101,6 +101,4 @@ def process_dataset(input_dir, output_dir):
 # ----------------------------
 # RUN
 # ----------------------------
-
-if __name__=="__main__":
-    process_dataset("dataset_raw", "dataset_clean")
+process_dataset("dataset_raw", "dataset_clean")
